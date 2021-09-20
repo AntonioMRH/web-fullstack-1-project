@@ -14,7 +14,7 @@ body {
 .nav-bar {
     background-color: white;
     width: 100vw;
-    min-width: 700px;
+    min-width: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
-    min-width: 700px;
+    min-width: 768px;
     width: 100%;
     min-height: 100%
 }
@@ -37,8 +37,6 @@ body {
     display: flex;
     justify-content: flex-start;
     position: relative;
-    left: 1.125rem;
-    top: 0.8125rem;
 }
 
 .nav-bar__right-side {
@@ -46,11 +44,12 @@ body {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right: 21.61px;
 }
 
 .nav-bar-brand {
-    margin-right: 1rem;
+    position: relative;
+    margin-left: 3.64vw;
+    margin-right: 0;
 }
 
 .nav-bar-brand img {
@@ -58,12 +57,14 @@ body {
 }
 
 .search-container {
-    flex: 1;
     display: flex;
     align-items: center;
-    margin-bottom: 1.2rem;
     position: relative;
+    margin-left: 0.92vw;
+    margin-right: 0;
+    width: 30.7vw;
 }
+
 
 .search__input {
     width: 100%;
@@ -72,10 +73,11 @@ body {
     line-height: 1.75;
     color: #63686E;
     font-size: 12px;
-    border-radius: 0.4rem;
+    border-radius: 4px;
     outline: none;
-    height: 2.125rem;
+    height: 34px;
     background-color: #EEF3F7;
+    font-family: "Roboto", sans-serif;
 }
 
 .search-icon__container {
@@ -104,13 +106,14 @@ body {
     display: flex;
     align-items: center; 
     flex-direction: column; 
-    height: 36px;
+    height: 38px;
     width: 58px;
 }
 
 .nav_item button span {
     filter: opacity(60%);
 }
+
 .nav_item img {
     height: 20px;
     margin-bottom: 5px;
@@ -126,7 +129,7 @@ body {
     color: #191919;
 }
 
-.nav__link:hover {
+.nav__link:hover, .nav__link-btn:hover span {
     filter: opacity(100%);
     fill: #191919;
     color: #191919;
@@ -150,7 +153,188 @@ body {
     overflow: hidden;
 }
 
+#last-opt {
+    padding-right: 2vw;
+    padding-left: 3.2vw;
+    height: 38px;
+}
 
+#last-opt .nav__photo {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 768px;
+}
+
+.container {
+    width: 93.4vw;
+    background-color: white;
+    margin: 38px 3.3vw 0 3.3vw;
+    display: block;
+    border-radius: 0 0 4px 4px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -3.8%;
+}
+
+.cover {
+    height: 135px;
+    background-image: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-pic-container {
+    height: 105px;
+    width: 105px;
+    position: relative;
+    margin: 0px 31.38px;
+    bottom: 77px;
+}
+
+.profile-pic {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.profile-description {
+    position: relative;
+    top: -65px;
+    margin: 0 22px;
+}
+
+.profile-description h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.profile-description h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.profile-description h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    position: relative;
+    bottom: 55px;
+    margin: 0 22px;
+}
+
+.buttons-container button {
+    background: #ffffff;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    color: #666666;
+    padding: 3px 14px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    border: 2px solid #5E5E5E;
+    background: #EBEBEB;
+
+    color: #5E5E5E;
+    font-weight: 700;
+    margin: -1px;
+
+    transition: background .2s;
+}
+
+.buttons-container button:first-child {
+    background-color: #0B65C2;
+    color: #ffffff;
+    border: none;
+    margin: -1px;
+}
+
+.buttons-container button:first-child:hover {
+    background-color: #004182;
+}
+
+.experience, .education {
+    margin: 17px 0 33px 21px;
+}
+
+.experience h2, .education h2 {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.exp-img {
+    width: 35px;
+    height: 35px;
+}
+
+.exp-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exp-item {
+    display: flex;
+    gap: 21px;
+}
+
+.exp-description {
+    line-height: 1.2;
+}
+
+.exp-description h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.exp-description h4{
+    font-size: 11px;
+    color: black;
+    font-weight: 400;
+}
+
+.exp-description p {
+    font-size: 11px;
+    color: #666;
+    font-weight: 400;
+}
+
+.exp-description span {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.container:last-child h2 {
+    margin-bottom: 30px;
+}
+
+.divider, .sec-divider {
+    height: 1px;
+    background-color: #EBEBEB;
+    margin: 19px 0;
+}
 
 
